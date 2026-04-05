@@ -1,9 +1,46 @@
-UC1:
+UC3:
 
-Author: Gourav
+public class OOPSBannerAppUC3 {
 
-public class OOPSBannerApp {
     public static void main(String[] args) {
-        System.out.println("OOPS");
+
+        String[] O = {
+                " ***** ",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*     *",
+                " ***** "
+        };
+
+        String[] P = {
+                "****** ",
+                "*     *",
+                "*     *",
+                "****** ",
+                "*      ",
+                "*      ",
+                "*      "
+        };
+
+        String[] S = {
+                " ******",
+                "*      ",
+                "*      ",
+                " ***** ",
+                "      *",
+                "      *",
+                "****** "
+        };
+
+        // Print banner row by row
+        for (int i = 0; i < O.length; i++) {
+            System.out.println(String.join("   ",
+                    O[i],   // First O
+                    O[i],   // Second O
+                    P[i],   // P
+                    S[i])); // S
+        }
     }
 }
